@@ -11,12 +11,16 @@ def setup():
     size(600,400)
 def draw():
     global bx,by,bxs,bys,rx,ry,rx2,ry2
+    fill(550,25,40)
     rect(10,10,550,300)
     rect(10,10,275,300)
+    fill(80,100,260)
     triangle(255,310,315,310,285,280)
     triangle(255,10,315,10,285,40)
+    fill(15,0,90)
     rect(rx,ry,20,100)
     rect(rx2,ry2,20,100)
+    fill(400,20,50)
     bx+=bxs
     by+=bys
     if keyPressed:
