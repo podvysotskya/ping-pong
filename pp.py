@@ -11,16 +11,20 @@ def setup():
     size(600,400)
 def draw():
     global bx,by,bxs,bys,rx,ry,rx2,ry2
-    fill(550,25,40)
+    fill(229,204,255)
     rect(10,10,550,300)
     rect(10,10,275,300)
-    fill(80,100,260)
+    fill(102,0,102)
     triangle(255,310,315,310,285,280)
     triangle(255,10,315,10,285,40)
-    fill(15,0,90)
+    fill(255,255,204)
     rect(rx,ry,20,100)
     rect(rx2,ry2,20,100)
-    fill(400,20,50)
+    fill(255,255,51)
+    ellipse(bx,by,15,15)
+    rect(10,320,30,20)
+    rect(50,320,30,20)
+    rect(90,320,30,20)
     bx+=bxs
     by+=bys
     if keyPressed:
@@ -37,7 +41,7 @@ def draw():
            ry2=ry2+2
     if bx<=rx+20 and bx<=ry+100 and by>=rx and by>=ry:
         bxs=-bxs
-    if bx>=rx2 and bx>=ry2 and by<=rx2-20 and by<=ry2+100
+    if bx>=rx2 and bx>=ry2 and by<=rx2-20 and by<=ry2+100:
          bxs=-bxs
     if bx<=19:
         bxs=0
