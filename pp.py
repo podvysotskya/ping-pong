@@ -7,10 +7,14 @@ rx=10
 ry=100
 rx2=540
 ry2=100
+i=0
+po=320
 def setup():
     size(600,400)
 def draw():
-    global bx,by,bxs,bys,rx,ry,rx2,ry2
+    global bx,by,bxs,bys,rx,ry,rx2,ry2,i,po
+    fill(255,255,255)
+    rect(0,0,800,800)
     fill(229,204,255)
     rect(10,10,550,300)
     rect(10,10,275,300)
@@ -27,7 +31,7 @@ def draw():
     rect(90,320,30,20)
     rect(520,320,30,20)
     rect(480,320,30,20)
-    rect(440,320,30,20)
+    rect(440,po,30,20)
     bx+=bxs
     by+=bys
     if keyPressed:
@@ -60,3 +64,7 @@ def draw():
         by=150
     if by>=297:
         bys=-bys
+    if bx<=60:
+         i+=1
+         po=800
+            
