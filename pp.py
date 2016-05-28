@@ -31,12 +31,12 @@ def draw():
     rect(rx2,ry2,20,100)
     fill(204,255,255)
     ellipse(bx,by,15,15)
-    rect(10,320,30,20)
-    rect(50,320,30,20)
-    rect(90,320,30,20)
-    rect(520,320,30,20)
-    rect(480,320,30,20)
-    rect(440,po,30,20)
+    rect(10,p1,30,20)
+    rect(50,p2,30,20)
+    rect(90,p3,30,20)
+    rect(520,p4,30,20)
+    rect(480,p5,30,20)
+    rect(440,p6,30,20)
     bx+=bxs
     by+=bys
     if keyPressed:
